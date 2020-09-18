@@ -5,6 +5,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
+import lombok.Data;
+
+@Data
 @Entity
 class Employee {
 
@@ -19,24 +22,26 @@ class Employee {
     this.role = role;
   }
   
-  
   public Long getId() {
 	return id;
 }
-public String getName() {
+  public String getName() {
 	return name;
 }
-public String getRole() {
+  public String getRole() {
 	return role;
 }
-
-public void setId(Long id) {
+  
+  public void setId(Long id) {
 	this.id = id;
 }
-public void setName(String name) {
-	this.name = name;
-}
-public void setRole(String role) {
+  public void setRole(String role) {
 	this.role = role;
 }
+  
+  public void setName(String name) {
+	this.name = name;
+}
+  
+  
 }

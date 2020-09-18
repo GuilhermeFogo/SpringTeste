@@ -8,9 +8,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("api/employees")
 class EmployeeController {
 
   private final EmployeeRepository repository;
@@ -21,7 +23,7 @@ class EmployeeController {
 
   // Aggregate root
 
-  @GetMapping("/employees")
+  @GetMapping("/")
   List<Employee> all() {
     return repository.findAll();
   }

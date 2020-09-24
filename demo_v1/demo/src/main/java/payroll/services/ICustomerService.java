@@ -7,4 +7,6 @@ import payroll.modal.Customer;
 public interface ICustomerService {
 	Collection<Customer> VerTodos();
 	
+	void salvar (Customer customer);
+	
 }

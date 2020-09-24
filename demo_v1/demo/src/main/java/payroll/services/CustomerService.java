@@ -23,4 +23,9 @@ public class CustomerService implements ICustomerService {
 		 return repository.findAll();
 	}
 
+	@Override
+	public void salvar(Customer customer) {
+		this.repository.save(customer);
+	}
+
 }

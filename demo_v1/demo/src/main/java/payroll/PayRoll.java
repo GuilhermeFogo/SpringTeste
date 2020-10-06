@@ -2,10 +2,13 @@ package payroll;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
-public class PayRollAplication {
+@RestController
+public class PayRoll {
+	
 	public static void main(String[] args) {
-		SpringApplication.run(PayRollAplication.class);
+		SpringApplication.run(PayRoll.class, args);
 	}
 }
